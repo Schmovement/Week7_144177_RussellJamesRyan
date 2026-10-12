@@ -1,0 +1,22 @@
+.slide-toggle {
+    max-height: 200px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.slide-toggle.collapsed {
+    max-height: 0;
+    opacity: 0;
+}
+
+/* Fade toggle replacement */
+.fade-toggle {
+    transition: opacity 0.4s ease-in-out;
+    opacity: 1;
+}
+
+.fade-toggle.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
