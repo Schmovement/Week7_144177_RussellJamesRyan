@@ -1,0 +1,108 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+input,
+input#message {
+    border-radius: 8px;
+    border: solid 0.5px black;
+    background-color: lightgray;
+
+}
+
+input#message {
+    width: auto;
+    height: 70px;
+}
+
+div#displaymessage {
+    flex: 1;
+    overflow-y: auto;
+}
+
+div#input {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    width: 100%;
+}
+
+#logo {
+    list-style: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+div#nav {
+    display: flex;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    margin: 0;
+    /* Removes default top/bottom list margins */
+    padding: 12px;
+    /* Clears list indentation */
+    list-style: none;
+}
+
+div.messagediv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+div#input {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    /* Ensures it spans the inner container width cleanly */
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+div#first,
+div#second {
+    flex: 1;
+    /* Automatically distributes space equally while accommodating gap */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+input#message::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
