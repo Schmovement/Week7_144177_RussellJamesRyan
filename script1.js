@@ -21,7 +21,6 @@ btnHideShow.addEventListener("click", function () {
         this.textContent = "Show";
     } else {
         this.textContent = "Hide";
-        hideShowMsg.textContent = "Hide me";
     }
 });
 
