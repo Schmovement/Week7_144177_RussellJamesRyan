@@ -18,8 +18,8 @@ $(document).ready(function () {
         const $nameInput = $parent.find(".name-input");
         const $messageInput = $parent.find(".message-input");
 
-        const nameValue = $.trim($nameInput.val());
-        const messageValue = $.trim($messageInput.val());
+        const nameValue = $nameInput.val().trim();
+        const messageValue = $messageInput.val().trim();
 
         if (nameValue === "" || messageValue === "") {
             alert("Please fill in both your name and message.");

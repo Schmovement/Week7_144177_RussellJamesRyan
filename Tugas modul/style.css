@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
 }
-    
+
 #logo {
     list-style: none;
     font-weight: bold;
@@ -96,6 +96,16 @@ textarea.message-input {
     padding: 8px 12px;
     box-sizing: border-box;
     font-size: 14px;
+    font-family: inherit;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6c757d;
+    opacity: 1;
 }
 
 .btn-send {
@@ -142,6 +152,11 @@ textarea.message-input {
     border: 1px solid #a3cfbb;
     border-bottom-right-radius: 2px;
 }
+
+.chat-card.consecutive {
+    margin-top: -2px;
+}
+
 
 .chat-card.user-2 .chat-sender {
     color: #0f5132;
